@@ -11,8 +11,7 @@ public class NetworkStateReceiver extends BroadcastReceiver {
 	@SuppressWarnings("deprecation")
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Toast.makeText(context, "Network connectivity change",
-				Toast.LENGTH_SHORT).show();
+
 		if (intent.getExtras() != null) {
 			NetworkInfo ni = (NetworkInfo) intent.getExtras().get(
 					ConnectivityManager.EXTRA_NETWORK_INFO);
